@@ -13,7 +13,7 @@ app.get("/", function (req, res) {
 app.get('/:name', function(req, res) {
     var name = req.params.name;
     
-    res.type('html').send('Hello ' + escape(name));
+    res.type('html').send('Hello ' + name);
 });
 
 if (require.main === module) {    
