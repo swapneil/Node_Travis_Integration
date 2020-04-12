@@ -2,16 +2,20 @@
   "name": "travis-integration",
   "version": "1.0.0",
   "description": "a nodejs app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",	
-    "test": "mocha"
+    "start": "node server.js",
+    "test": "mocha -R spec spec.js"
   },
   "author": "Swapneil Kumar Dash",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
     "express": "^4.17.1",
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "randomstring": "^1.1.5",
+    "really-need": "^1.9.2",
+    "server": "^1.0.27",
+    "supertest": "^4.0.2"
   }
 }
